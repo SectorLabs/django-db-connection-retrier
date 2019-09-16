@@ -9,6 +9,10 @@ Automatically try to re-establish Django database connections when they fail due
 
 When the Django app (`dbconnectionretrier`) loads, a hook is installed in Django's [`BaseDatabaseWrapper.ensure_connection`](https://github.com/django/django/blob/master/django/db/backends/base/base.py#L216) that catches `django.db.OperationalError`. If the error raised is a DNS error, the connction attempt is retried synchronously **three times**.
 
+---
+
+Tested on Django 2.0-2.3 and Python 3.7 and 3.8. Might work with other versions of Django and Python.
+
 ## Installation
 1. Install the package from PyPi:
 
