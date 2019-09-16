@@ -14,7 +14,7 @@ def set_defaults(db):
 def unknown_host():
     """DB connection with a broken host name."""
     db = dj_database_url.config(
-        default="postgres://this_domain_should_not_exist/test_strat"
+        default="postgres://this_domain_should_not_exist/test_mydb"
     )
     set_defaults(db)
     return db
