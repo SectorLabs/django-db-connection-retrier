@@ -38,7 +38,7 @@ setup(
     author="Sector Labs",
     author_email="open-source@sectorlabs.ro",
     keywords=["django", "postgres", "extra", "hstore", "ltree"],
-    install_requires=["aspectlib==1.4.2", "Django==2.2.5"],
+    install_requires=["aspectlib==1.4.2", "Django>=2.0"],
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
