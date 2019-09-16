@@ -1,0 +1,29 @@
+# Ignore virtual environments
+env/
+.env/
+
+# Ignore Python byte code cache
+*.pyc
+__pycache__
+.cache
+
+# Ignore coverage reports
+.coverage
+htmlcov
+
+# Ignore build results
+*.egg-info/
+dist/
+
+# Ignore stupid .DS_Store
+.DS_Store
+
+# Ignore benchmark results
+.benchmarks/
+
+# Ignore temporary tox environments
+.tox/
+.pytest_cache/
+
+# Ignore PyCharm / IntelliJ files
+.idea/
