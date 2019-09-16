@@ -10,7 +10,7 @@ jobs:
                 command: apk add postgresql-libs gcc musl-dev postgresql-dev git
             - run:
                 name: Install Python packages
-                command: pip install -r requirements.xt
+                command: pip install -r requirements.txt
             - run:
                 name: Run tests
                 command: tox -e 'py37-dj{20,21,22}'
