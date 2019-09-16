@@ -44,5 +44,5 @@ patch.rollback()
 from dbconnectionretrier.patch import patch_ensure_connection_contextual
 
 with patch_ensure_connection_contextual():
-    # all code inside this block benefits from connectiion retrying
+    # all code inside this block benefits from connection retrying
 ```
