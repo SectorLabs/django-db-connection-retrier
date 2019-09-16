@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![PyPi](https://badge.fury.io/py/django-db-connection-retrier.svg)](https://pypi.python.org/pypi/django-db-connection-retrier)
+[![CircleCI](https://circleci.com/gh/SectorLabs/django-db-connection-retrier/tree/master.svg?style=svg&circle-token=8177e64d426308c93d38af49a1cca1df4225bc67)](https://circleci.com/gh/SectorLabs/django-db-connection-retrier/tree/master)
 
 Automatically try to re-establish Django database connections when they fail due to DNS errors.
 
