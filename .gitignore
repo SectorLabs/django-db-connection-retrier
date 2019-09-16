@@ -27,3 +27,6 @@ dist/
 
 # Ignore PyCharm / IntelliJ files
 .idea/
+
+# Ignore pip meta data
+pip-wheel-metadata/
