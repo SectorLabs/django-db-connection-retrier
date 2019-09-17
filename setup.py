@@ -1,4 +1,5 @@
 import distutils.cmd
+import os
 import subprocess
 
 from setuptools import find_packages, setup
@@ -27,13 +28,21 @@ def create_command(text, commands):
     return CustomCommand
 
 
+with open(
+    os.path.join(os.path.dirname(__file__), "README.md"), encoding="utf-8"
+) as readme:
+    README = readme.read()
+
+
 setup(
     name="django-db-connection-retrier",
-    version="1.0a1",
+    version="1.0a2",
     packages=find_packages(),
     include_package_data=True,
     license="MIT License",
     description="Automatically ty re-establishing the Django database connection when it gets lost.",
+    long_description=README,
+    long_description_content_type="text/markdown",
     url="https://github.com/SectorLabs/django-db-connection-retrier",
     author="Sector Labs",
     author_email="open-source@sectorlabs.ro",
