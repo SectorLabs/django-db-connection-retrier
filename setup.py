@@ -29,7 +29,7 @@ def create_command(text, commands):
 
 setup(
     name="django-db-connection-retrier",
-    version="1.0",
+    version="1.0a1",
     packages=find_packages(),
     include_package_data=True,
     license="MIT License",
