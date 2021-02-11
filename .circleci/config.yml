@@ -17,7 +17,7 @@ jobs:
 
     test-python38:
         docker:
-            - image: python:3.8-rc-alpine
+            - image: python:3.8-alpine
         steps:
             - checkout
             - run:
